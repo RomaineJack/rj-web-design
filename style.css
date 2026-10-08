@@ -1,0 +1,345 @@
+
+/* ==================================
+   GLOBAL STYLES
+================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #111827;
+  color: white;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+/* ==================================
+   HEADER AND NAVIGATION
+================================== */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 25px 40px;
+  border-bottom: 1px solid #374151;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #60A5FA;
+}
+
+/* ==================================
+   HERO SECTION
+================================== */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+  padding: 100px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  color: #60A5FA;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: #D1D5DB;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+/* ==================================
+   BUTTONS
+================================== */
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.button {
+  display: inline-block;
+  background-color: #2563EB;
+  color: white;
+  padding: 14px 25px;
+  text-decoration: none;
+  border-radius: 18px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #1D4ED8;
+}
+
+.secondary-button {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 14px 25px;
+  border: 1px solid #475569;
+  border-radius: 18px;
+  margin-top: 20px;
+}
+
+.secondary-button:hover {
+  background-color: #1F2937;
+}
+
+/* ==================================
+   SERVICES SECTION
+================================== */
+
+.services {
+  padding: 80px 40px;
+  background-color: #0F172A;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  color: #D1D5DB;
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: #1F2937;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #374151;
+
+  transition: transform 0.2s ease,
+              border-color 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: #60A5FA;
+}
+
+.service-card h3 {
+  color: #60A5FA;
+  font-size: 22px;
+}
+
+.service-card p {
+  color: #D1D5DB;
+  line-height: 1.6;
+}
+
+/* ==================================
+   CONTACT SECTION
+================================== */
+
+.contact {
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.contact h2 {
+  font-size: 36px;
+}
+
+.contact p {
+  color: #D1D5DB;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ==================================
+   CONTACT FORM
+================================== */
+
+#contact-form {
+  max-width: 550px;
+  margin: 30px auto 0;
+  padding: 30px;
+  background-color: #1F2937;
+  border-radius: 12px;
+  text-align: left;
+}
+
+#contact-form label {
+  display: block;
+  color: white;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  background-color: #111827;
+  color: white;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: 2px solid #60A5FA;
+  outline-offset: 2px;
+}
+
+#contact-form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #2563EB;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: #1D4ED8;
+}
+
+#form-status {
+  max-width: 550px;
+  margin: 15px auto;
+  color: #93C5FD;
+}
+
+/* ==================================
+   FOOTER
+================================== */
+
+footer {
+  background-color: #0B1220;
+  padding: 40px;
+  border-top: 1px solid #374151;
+}
+
+footer h3 {
+  color: white;
+  font-size: 20px;
+}
+
+footer p {
+  color: #9CA3AF;
+  font-size: 14px;
+}
+
+/* ==================================
+   TABLET AND MOBILE
+================================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 35px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+}
+
+/* ==================================
+   SMALL MOBILE SCREENS
+================================== */
+
+@media (max-width: 600px) {
+
+  header {
+    padding: 20px;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .services {
+    padding: 50px 20px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    padding: 50px 20px;
+  }
+
+  #contact-form {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 30px 20px;
+  }
+
+}
