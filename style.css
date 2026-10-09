@@ -479,3 +479,85 @@ footer p {
 }
 
 
+/* PRICING SECTION */
+.pricing {
+  padding: 100px 40px;
+  background: #0f172a;
+  text-align: center;
+}
+.pricing h2 { font-size: 36px; margin-bottom: 15px; }
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 50px auto 0;
+}
+.pricing-card {
+  position: relative;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 25px;
+  text-align: left;
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 14px;
+  transition: transform .3s ease;
+}
+.pricing-card:hover { transform: translateY(-6px); }
+.pricing-card.featured { border: 2px solid #60a5fa; background: #1e293b; }
+.popular-tag {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 15px;
+  background: #2563eb;
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.pricing-card h3 { font-size: 25px; margin: 0 0 12px; }
+.package-description { color: #d1d5db; line-height: 1.6; min-height: 52px; }
+.price { font-size: 42px; font-weight: 800; margin: 20px 0 5px; }
+.price-note { color: #9ca3af; font-size: 13px; margin-bottom: 25px; }
+.pricing-card ul { list-style: none; padding: 0; margin: 0 0 30px; }
+.pricing-card li {
+  color: #d1d5db;
+  padding: 12px 0;
+  border-bottom: 1px solid #374151;
+  line-height: 1.5;
+}
+.pricing-card li::before { content: "✓"; color: #60a5fa; font-weight: bold; margin-right: 10px; }
+.pricing-button {
+  display: block;
+  margin-top: auto;
+  padding: 15px 20px;
+  background: #2563eb;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+}
+.pricing-button:hover { background: #1d4ed8; }
+.pricing-disclaimer {
+  max-width: 800px;
+  margin: 35px auto 0;
+  color: #9ca3af;
+  font-size: 14px;
+  line-height: 1.7;
+}
+@media (max-width: 900px) {
+  .pricing-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .pricing { padding: 70px 20px; }
+  .pricing h2 { font-size: 28px; }
+  .pricing-grid { grid-template-columns: 1fr; gap: 35px; }
+  .pricing-card { padding: 30px 22px; }
+  .price { font-size: 36px; }
+}
