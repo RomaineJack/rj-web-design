@@ -1,4 +1,4 @@
-// Submit RJ Web Design inquiries directly to Formspree.
+// Submit Crescera Design Group inquiries directly to Formspree.
 const form = document.getElementById("contact-form");
 const submitButton = document.getElementById("contact-submit");
 const statusMessage = document.getElementById("form-status");
