@@ -267,7 +267,10 @@
         we'll help you get started.
       </p>
 
-      <form id="contact-form">
+      <form id="contact-form" action="https://formsubmit.co/ajax/romainej08@gmail.com" method="POST">
+
+        <input type="hidden" name="_subject" value="New RJ Web Design website inquiry">
+        <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
 
         <label for="name">Your Name</label>
         <input
@@ -299,7 +302,7 @@
           required
         ></textarea>
 
-        <button type="submit">
+        <button type="submit" id="contact-submit">
           Send Message
         </button>
 
@@ -326,7 +329,7 @@
   </footer>
 
   <!-- JAVASCRIPT -->
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 
 </body>
 </html>
