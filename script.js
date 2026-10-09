@@ -1,53 +1,41 @@
-console.log("RJ Web Design is working!");
-
-console.log("RJ Web Design is working!");
-
-// Find the contact form on our webpage
+// RJ Web Design contact form: submit without opening an email application.
 const form = document.getElementById("contact-form");
-
-// Find the paragraph where messages will appear
 const statusMessage = document.getElementById("form-status");
+const submitButton = document.getElementById("contact-submit");
 
-// Listen for someone submitting the form
-form.addEventListener("submit", function(event) {
+if (form && statusMessage && submitButton) {
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
 
-  // Stop the page from refreshing
-  event.preventDefault();
+    if (!form.reportValidity()) return;
 
-  // Get the information entered by the visitor
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const message = document.getElementById("message").value.trim();
+    const formData = new FormData(form);
+    if (String(formData.get("_honey") || "").trim()) return;
 
-  // Check whether any field is empty
-  if (!name || !email || !message) {
-    statusMessage.textContent = "Please complete every field.";
-    return;
-  }
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending...";
+    statusMessage.textContent = "Sending your inquiry...";
 
-  // Prepare the email subject
-  const subject = encodeURIComponent(
-    "Website inquiry from " + name
-  );
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { "Accept": "application/json" }
+      });
 
-  // Prepare the email body
-  const body = encodeURIComponent(
-    "Name: " + name + "\n" +
-    "Email: " + email + "\n\n" +
-    "Project Details:\n" + message
-  );
+      const result = await response.json();
+      if (!response.ok || result.success === false || result.success === "false") {
+        throw new Error("Submission was not accepted.");
+      }
 
-  // Replace this with your own email address
-  const destination = "Romainejackson9@gmail.com";
-
-  // Tell the visitor what happens next
-  statusMessage.textContent =
-    "Your email application should open. Please send the prepared email to finish.";
-
-  // Open the visitor's email application
-  window.location.href =
-    "mailto:" + destination +
-    "?subject=" + subject +
-    "&body=" + body;
-
-});
+      statusMessage.textContent = "Your inquiry has been submitted. We'll get back to you soon.";
+      form.reset();
+    } catch (error) {
+      statusMessage.textContent = "We couldn't send your message. Please try again later.";
+      console.error("Contact form submission failed:", error);
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = "Send Message";
+    }
+  });
+}
