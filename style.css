@@ -13,7 +13,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #111827;
+  background-color: #0B1730;
   color: white;
   font-family: 'Inter', Arial, sans-serif;
 }
@@ -50,7 +50,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #60A5FA;
+  color: #38BDF8;
 }
 
 /* ==================================
@@ -68,7 +68,7 @@ nav a:hover {
 }
 
 .subtitle {
-  color: #60A5FA;
+  color: #38BDF8;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -106,7 +106,7 @@ nav a:hover {
 
 .button {
   display: inline-block;
-  background-color: #2563EB;
+  background-color: #1479F6;
   color: white;
   padding: 14px 25px;
   text-decoration: none;
@@ -130,7 +130,7 @@ nav a:hover {
 }
 
 .secondary-button:hover {
-  background-color: #1F2937;
+  background-color: #172944;
 }
 
 /* ==================================
@@ -139,7 +139,7 @@ nav a:hover {
 
 .services {
   padding: 80px 40px;
-  background-color: #0F172A;
+  background-color: #101E38;
 }
 
 .services h2 {
@@ -162,7 +162,7 @@ nav a:hover {
 }
 
 .service-card {
-  background-color: #1F2937;
+  background-color: #172944;
   padding: 30px;
   border-radius: 12px;
   border: 1px solid #374151;
@@ -173,11 +173,11 @@ nav a:hover {
 
 .service-card:hover {
   transform: translateY(-5px);
-  border-color: #60A5FA;
+  border-color: #38BDF8;
 }
 
 .service-card h3 {
-  color: #60A5FA;
+  color: #38BDF8;
   font-size: 22px;
 }
 
@@ -213,7 +213,7 @@ nav a:hover {
   max-width: 550px;
   margin: 30px auto 0;
   padding: 30px;
-  background-color: #1F2937;
+  background-color: #172944;
   border-radius: 12px;
   text-align: left;
 }
@@ -230,7 +230,7 @@ nav a:hover {
   width: 100%;
   padding: 14px;
   margin-bottom: 20px;
-  background-color: #111827;
+  background-color: #0B1730;
   color: white;
   border: 1px solid #475569;
   border-radius: 8px;
@@ -240,14 +240,14 @@ nav a:hover {
 
 #contact-form input:focus,
 #contact-form textarea:focus {
-  outline: 2px solid #60A5FA;
+  outline: 2px solid #38BDF8;
   outline-offset: 2px;
 }
 
 #contact-form button {
   width: 100%;
   padding: 15px;
-  background-color: #2563EB;
+  background-color: #1479F6;
   color: white;
   border: none;
   border-radius: 8px;
@@ -291,7 +291,7 @@ footer p {
 
 .portfolio {
     padding: 100px 40px;
-    background-color: #111827;
+    background-color: #0B1730;
     text-align: center;
 }
 
@@ -310,7 +310,7 @@ footer p {
 
 .portfolio-card {
     min-width: 0;
-    background-color: #1f2937;
+    background-color: #172944;
     border: 1px solid #374151;
     border-radius: 12px;
     overflow: hidden;
@@ -328,7 +328,7 @@ footer p {
     width: 100%;
     height: 220px;
     overflow: hidden;
-    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    background: linear-gradient(135deg, #1479F6, #7c3aed);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -380,7 +380,7 @@ footer p {
     display: block;
     width: fit-content;
     margin-top: 20px;
-    color: #60a5fa;
+    color: #38BDF8;
     font-weight: 600;
     text-decoration: none;
 }
@@ -482,7 +482,7 @@ footer p {
 /* PRICING SECTION */
 .pricing {
   padding: 100px 40px;
-  background: #0f172a;
+  background: #101E38;
   text-align: center;
 }
 .pricing h2 { font-size: 36px; margin-bottom: 15px; }
@@ -500,20 +500,20 @@ footer p {
   flex-direction: column;
   padding: 35px 25px;
   text-align: left;
-  background: #1f2937;
+  background: #172944;
   border: 1px solid #374151;
   border-radius: 14px;
   transition: transform .3s ease;
 }
 .pricing-card:hover { transform: translateY(-6px); }
-.pricing-card.featured { border: 2px solid #60a5fa; background: #1e293b; }
+.pricing-card.featured { border: 2px solid #38BDF8; background: #1e293b; }
 .popular-tag {
   position: absolute;
   top: -15px;
   left: 50%;
   transform: translateX(-50%);
   padding: 8px 15px;
-  background: #2563eb;
+  background: #1479F6;
   color: white;
   border-radius: 20px;
   font-size: 12px;
@@ -531,12 +531,12 @@ footer p {
   border-bottom: 1px solid #374151;
   line-height: 1.5;
 }
-.pricing-card li::before { content: "✓"; color: #60a5fa; font-weight: bold; margin-right: 10px; }
+.pricing-card li::before { content: "✓"; color: #38BDF8; font-weight: bold; margin-right: 10px; }
 .pricing-button {
   display: block;
   margin-top: auto;
   padding: 15px 20px;
-  background: #2563eb;
+  background: #1479F6;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -565,3 +565,11 @@ footer p {
 /* Keep the spam-trap field off screen while retaining it in the form. */
 #contact-form .form-honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
 #contact-form button:disabled { opacity: .7; cursor: wait; }
+
+/* Crescera Design Group brand identity */
+.brand,.footer-brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:#fff;min-width:0}
+.brand img,.footer-brand img{flex:none;display:block}
+.brand-name{display:flex;flex-direction:column;font-size:21px;font-weight:800;letter-spacing:.055em;line-height:1.15}
+.brand-name small{font-size:10px;font-weight:700;letter-spacing:.31em;color:#38BDF8;margin-top:5px}
+.footer-brand{margin-bottom:12px}
+@media(max-width:600px){.brand-name{font-size:17px}.brand-name small{font-size:9px}.brand img{width:40px;height:40px}}
