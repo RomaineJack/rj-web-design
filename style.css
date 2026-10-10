@@ -714,3 +714,29 @@ footer p {
 .service-detail-links a{color:#bfdbfe;text-decoration:none;border:1px solid #415a7a;border-radius:8px;padding:11px 14px;background:#172944}
 .service-detail-links a:hover{border-color:#38bdf8;color:#fff}
 @media(max-width:700px){.service-detail-hero{padding:64px 22px}.service-detail-content{padding:50px 22px}.service-detail-steps{grid-template-columns:1fr}.service-detail-cta{padding:24px}}
+
+
+/* Homepage conversion and trust sections */
+.hero-assurance{color:#aebed2;font-size:13px;line-height:1.7;margin:18px 0 0;max-width:530px}
+.home-proof{background:#101e38;border-top:1px solid #2b3e58;border-bottom:1px solid #2b3e58;padding:26px 40px}
+.home-proof-inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.home-proof-inner>div{padding:4px 18px;border-left:2px solid #38bdf8}
+.home-proof-inner strong{display:block;font-size:15px;margin-bottom:8px;color:#fff}
+.home-proof-inner span{display:block;font-size:13px;color:#b9c7d9;line-height:1.6}
+.home-process{padding:80px 40px;background:#0b1730}
+.home-process-inner,.home-faq-inner{max-width:1080px;margin:0 auto}
+.home-process h2,.home-faq h2{font-size:clamp(28px,3.5vw,38px);line-height:1.2;margin:12px 0 16px}
+.home-process-intro{color:#cbd5e1;line-height:1.7;margin:0 0 30px}
+.home-process-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.home-process-grid article{padding:28px;background:#172944;border:1px solid #354761;border-radius:12px}
+.home-process-grid article span{color:#38bdf8;font-size:14px;font-weight:800}
+.home-process-grid h3{font-size:19px;margin:15px 0 10px}
+.home-process-grid p{font-size:15px;color:#cbd5e1;line-height:1.75;margin:0}
+.home-process .button{margin-top:30px}
+.home-faq{padding:76px 40px;background:#101e38}
+.home-faq h2{margin-bottom:28px}
+.home-faq details{background:#172944;border:1px solid #344861;border-radius:10px;margin-bottom:12px;padding:0 20px}
+.home-faq summary{cursor:pointer;list-style-position:outside;padding:20px 4px;font-weight:650;line-height:1.5}
+.home-faq details[open]{border-color:#4d739a}
+.home-faq details p{color:#cbd5e1;line-height:1.75;font-size:15px;padding:0 4px 20px;margin:0}
+@media(max-width:760px){.home-proof-inner,.home-process-grid{grid-template-columns:1fr}.home-proof{padding:24px}.home-process,.home-faq{padding:60px 24px}.home-proof-inner{gap:18px}}
