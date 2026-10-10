@@ -597,3 +597,38 @@ footer p {
 #contact-form select:focus{outline:2px solid #38bdf8;outline-offset:2px}
 @media(max-width:900px){.creative-price-grid,.bundle-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.creative-price-grid,.bundle-grid{grid-template-columns:1fr}.about{padding:65px 20px}.about h2{font-size:30px}.creative-price-item{padding:18px}.creative-pricing{margin-top:50px}}
+
+
+/* OTSPress featured portfolio and case study */
+.portfolio-featured{max-width:1200px;margin:42px auto 30px;display:grid;grid-template-columns:1.15fr 1fr;overflow:hidden;background:#172944;border:1px solid #374151;border-radius:18px;text-align:left}
+.ots-feature-art{min-height:330px;background:radial-gradient(ellipse at 88% 15%,#385d08 0,transparent 43%),linear-gradient(145deg,#060808,#10170b 60%,#030404);display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:clamp(24px,4vw,54px);overflow:hidden;border-bottom:3px solid #a6ff00;position:relative}
+.ots-feature-art:before{content:"";position:absolute;right:-30px;top:-65px;width:140px;height:550px;background:#a6ff00;transform:rotate(36deg);opacity:.14}
+.ots-kicker{color:#c4ff76;letter-spacing:.2em;font-size:11px;font-weight:800;z-index:1}
+.ots-wordmark{display:flex;flex-wrap:nowrap;white-space:nowrap;font-size:clamp(42px,6vw,95px);font-weight:800;letter-spacing:-.07em;line-height:1.2;z-index:1}
+.ots-wordmark span:first-child{color:white}.ots-wordmark span:last-child{color:#a6ff00}
+.ots-subline{letter-spacing:.38em;font-size:clamp(9px,1vw,15px);font-weight:800;z-index:1}
+.ots-feature-art p{font-weight:800;font-size:clamp(13px,1.5vw,20px);z-index:1;margin-top:28px}
+.ots-feature-art p strong{color:#a6ff00}
+.portfolio-featured-content{padding:clamp(26px,4vw,55px);display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.portfolio-featured-content h3{font-size:32px;margin:20px 0 8px}
+.portfolio-featured-content>p{color:#d1d5db;line-height:1.7}
+.case-tags{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0}
+.case-tags span{border:1px solid #466079;background:#11253b;border-radius:40px;padding:8px 12px;color:#d9e9ff;font-size:12px;font-weight:600}
+.portfolio-featured-content .button{margin-top:12px}
+.case-study{max-width:1160px;margin:auto;padding:35px 30px 80px}
+.case-back{color:#93c5fd;text-decoration:none;font-weight:600}
+.case-intro{padding:70px 0 45px}
+.case-intro h1{font-size:clamp(38px,6vw,72px);margin:15px 0}
+.case-intro>p:not(.subtitle){font-size:20px;color:#d1d5db;line-height:1.7;max-width:770px}
+.case-visual .ots-feature-art{min-height:440px;border-radius:18px}
+.case-visual .ots-wordmark{font-size:clamp(55px,10vw,135px)}
+.case-image-note{color:#9ca3af;font-size:13px;line-height:1.6}
+.case-section{padding:55px 0;border-bottom:1px solid #374151}
+.case-section h2{font-size:clamp(27px,3.5vw,42px);margin:10px 0 22px}
+.case-section p:not(.subtitle){color:#d1d5db;line-height:1.85;font-size:17px;max-width:850px}
+.case-two{display:grid;grid-template-columns:1fr 1fr;gap:45px}
+.case-two h3{color:#93c5fd}
+.case-cta{padding:70px 25px;text-align:center;background:#101e38;border-radius:18px;margin-top:60px}
+.case-cta p{color:#d1d5db}
+@media(max-width:850px){.portfolio-featured,.case-two{grid-template-columns:1fr}.portfolio-featured .ots-feature-art{min-height:290px}.ots-wordmark{font-size:clamp(46px,11vw,90px)}}
+@media(max-width:600px){.case-study{padding:25px 20px 60px}.case-intro{padding:40px 0}.case-visual .ots-feature-art{min-height:300px;padding:22px}.case-visual .ots-wordmark{font-size:clamp(42px,10vw,70px)}.ots-subline{letter-spacing:.18em}.portfolio-featured-content{padding:25px}}
