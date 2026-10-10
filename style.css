@@ -655,3 +655,18 @@ footer p {
 .case-section .site-preview-frame a{display:block;max-width:100%}
 @media(max-width:850px){.portfolio-featured{grid-template-columns:1fr}.portfolio-featured .ots-feature-art{min-height:245px;border-right:0;border-bottom:1px solid #30415c}.portfolio-featured .ots-wordmark{font-size:clamp(42px,9vw,70px)}}
 @media(max-width:600px){.portfolio-featured-content{padding:24px}.portfolio-featured .ots-feature-art{padding:24px}.portfolio-featured .ots-wordmark{font-size:clamp(38px,10vw,58px)}.case-section .case-site-screenshot{max-height:350px}}
+
+
+/* Jackson's Sweets client case study */
+.portfolio-actions{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;margin-top:12px}
+.sweets-case .case-intro{max-width:950px}
+.sweets-hero{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;gap:32px;padding:clamp(24px,4vw,52px);background:linear-gradient(135deg,#152641,#192b46);border:1px solid #364862;border-radius:18px;overflow:hidden}
+.sweets-hero-copy{min-width:0}
+.sweets-eyebrow{display:inline-block;color:#b8cdf7;font-size:11px;font-weight:800;letter-spacing:.18em;margin-bottom:20px}
+.sweets-hero-copy h2{font-size:clamp(26px,3.4vw,46px);line-height:1.2;margin:0 0 16px;color:#fff}
+.sweets-hero-copy p{color:#d1d9e7;line-height:1.7;font-size:16px}
+.sweets-accent-line{display:block;width:60px;height:3px;border-radius:4px;background:#70a5ff;margin-top:28px}
+.sweets-preview{width:100%;min-width:0;background:#0b1730;border:1px solid #44526b;border-radius:13px;padding:12px;box-shadow:0 18px 38px rgba(0,0,0,.18)}
+.sweets-preview img{display:block;width:100%;height:auto;max-height:420px;object-fit:contain;object-position:center;border-radius:6px}
+.sweets-case .case-two>div{min-width:0}
+@media(max-width:780px){.sweets-hero{grid-template-columns:1fr;gap:25px}.sweets-preview img{max-height:360px}}
