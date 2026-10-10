@@ -21,13 +21,13 @@ if (form && submitButton && statusMessage) {
       if (!response.ok) throw new Error("Form submission failed");
 
       form.reset();
-      statusMessage.textContent = "Thank you! Your message has been sent.";
+      statusMessage.textContent = "Thank you! Your project inquiry has been sent. We will be in touch soon.";
     } catch (error) {
-      statusMessage.textContent = "Your message could not be sent. Please try again.";
+      statusMessage.textContent = "Your inquiry could not be sent. Please try again.";
       console.error("Formspree submission error:", error);
     } finally {
       submitButton.disabled = false;
-      submitButton.textContent = "Send Message";
+      submitButton.textContent = "Send Project Inquiry";
     }
   });
 }
