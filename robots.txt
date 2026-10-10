@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cresceradesigngroup.com/sitemap.xml
