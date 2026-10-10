@@ -573,3 +573,27 @@ footer p {
 .brand-name small{font-size:10px;font-weight:700;letter-spacing:.31em;color:#38BDF8;margin-top:5px}
 .footer-brand{margin-bottom:12px}
 @media(max-width:600px){.brand-name{font-size:17px}.brand-name small{font-size:9px}.brand img{width:40px;height:40px}}
+
+
+/* Creative studio expansion */
+.service-price{font-weight:700;color:#93c5fd!important;margin-top:18px}
+.service-card a,.bundle-card a{color:#7dd3fc;font-weight:700;text-decoration:none}
+.service-card a:hover,.bundle-card a:hover{text-decoration:underline}
+.creative-pricing{max-width:1200px;margin:72px auto 0;text-align:left}
+.creative-pricing>h3{font-size:28px;margin:35px 0 15px}
+.creative-price-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.creative-price-item{background:#172944;border:1px solid #374151;border-radius:12px;padding:22px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.creative-price-item span{color:#7dd3fc;font-weight:800;white-space:nowrap}
+.bundle-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.bundle-card{background:#172944;border:1px solid #374151;border-radius:14px;padding:25px}
+.bundle-card h4{font-size:20px;margin:0 0 12px}
+.bundle-card>strong{font-size:29px;color:#7dd3fc}
+.bundle-card p{color:#d1d5db;line-height:1.6;min-height:76px}
+.about{padding:90px 40px;background:#0b1730}
+.about-inner{max-width:900px;margin:auto}
+.about h2{font-size:38px}
+.about p:not(.subtitle){color:#d1d5db;line-height:1.8;font-size:18px}
+#contact-form select{width:100%;padding:14px;margin-bottom:20px;background:#0b1730;color:white;border:1px solid #475569;border-radius:8px;font:inherit}
+#contact-form select:focus{outline:2px solid #38bdf8;outline-offset:2px}
+@media(max-width:900px){.creative-price-grid,.bundle-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.creative-price-grid,.bundle-grid{grid-template-columns:1fr}.about{padding:65px 20px}.about h2{font-size:30px}.creative-price-item{padding:18px}.creative-pricing{margin-top:50px}}
